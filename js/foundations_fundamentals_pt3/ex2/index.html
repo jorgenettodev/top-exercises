@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+    let add7 = (n) => n + 7;
+    
+    let multiply = (a, b) => {
+        let result = a * b
+        return result;
+    }
+
+    let capitalize = (string) => {
+        let firstLetter = string.slice(0,1);
+        firstLetter = firstLetter.toUpperCase();
+        let restOfTheWord = string.slice(1);
+        let result = firstLetter + restOfTheWord.toLowerCase();
+        return result;
+        
+    }
+
+    let lastLetter = (string) => {
+        let result = string.slice(-1); // return only the last letter of the string;
+        return result;
+    }
+    
+    console.log(add7(5)); // 5 + 7 == 12
+    console.log(multiply(9,3)); // 9 * 3 == 27
+    console.log(capitalize('netto')); // should return "Netto";
+    console.log(lastLetter('abcd')); // should return "d";
+    </script>
+</body>
+</html>
