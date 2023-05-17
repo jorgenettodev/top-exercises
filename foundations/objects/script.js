@@ -55,9 +55,17 @@ const person2 = {
 // ##### CONSTRUCTOR #####
 // - Constructors are functions used to create objects
 
-function Person(name) {
+function Person(name,age,job) {
     this.name = name;
-    this.introduceSelf = function() {
-        console.log(`Hi, i'm ${this.name}.`);
-    }
-}
+    this.age = age;
+    this.job = job;
+
+    // create a method sayHi
+    this.sayHi = function() {
+        console.log(`Hi, my name is ${this.name}.`);
+    };
+
+    this.introduceSelf = () => {
+        console.log(`Hi, my job is ${this.job} and I am ${this.age} years old.`);
+    };
+};
