@@ -5,7 +5,10 @@ let cacadoresDeOni = [
 ];
 
 
-let Tanjiro = cacadoresDeOni.find((cacador => cacador["name"] === "Tanjiro"));
 
 
-cacadoresDeOni.map(cacador => console.log(cacador));
+let sortedHunters = cacadoresDeOni.sort((a, b) => {
+    return (a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0;
+})
+
+console.log(sortedHunters);
